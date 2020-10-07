@@ -1,0 +1,9 @@
+[Unit]
+Description=Disable MH-Z19 auto calibration
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 -m mh_z19 --abc_off
+
+[Install]
+WantedBy=multi-user.target

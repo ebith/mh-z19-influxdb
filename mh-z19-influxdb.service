@@ -1,0 +1,7 @@
+[Unit]
+Description=MH-Z19-InfluxDB
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pi/.ghq/github.com/ebith/mh-z19-influxdb
+ExecStart=/usr/bin/python3 mh-z19-influxdb.py

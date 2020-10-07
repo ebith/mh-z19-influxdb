@@ -1,0 +1,9 @@
+[Unit]
+Description=MH-Z19-InfluxDB
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=20s
+
+[Install]
+WantedBy=timers.target
